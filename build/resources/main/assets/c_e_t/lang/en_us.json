@@ -1,0 +1,7 @@
+{
+  "entity.c_e_t.custom_teleporting": "Custom Teleporting",
+  "entity.c_e_t.custom_enderman": "Custom Enderman",
+  "item.c_e_t.custom_teleporting_spawn_egg": "Custom Teleporting Spawn Egg",
+  "item.c_e_t.custom_enderman_spawn_egg": "Custom Enderman Spawn Egg",
+  "item.c_e_t.test_teleport": "Test Teleport"
+}

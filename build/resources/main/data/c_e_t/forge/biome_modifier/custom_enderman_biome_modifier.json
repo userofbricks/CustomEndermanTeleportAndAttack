@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "c_e_t:custom_enderman",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}
