@@ -1,0 +1,205 @@
+{
+  "mod_elements": [
+    {
+      "name": "CustomEnderman",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_enderman",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/c_e_t/models/item/custom_enderman_spawn_egg.json",
+          "src/main/java/net/mcreator/cet/entity/CustomEndermanEntity.java",
+          "src/main/java/net/mcreator/cet/client/renderer/CustomEndermanRenderer.java",
+          "src/main/resources/data/c_e_t/forge/biome_modifier/custom_enderman_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "CustomTeleportingOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_teleporting_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cet/procedures/CustomTeleportingOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CustomTeleporting",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_teleporting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cet/client/renderer/CustomTeleportingRenderer.java",
+          "src/main/java/net/mcreator/cet/entity/CustomTeleportingEntity.java",
+          "src/main/resources/assets/c_e_t/models/item/custom_teleporting_spawn_egg.json",
+          "src/main/resources/data/c_e_t/forge/biome_modifier/custom_teleporting_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "TeleportRandomly2",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_randomly_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cet/procedures/TeleportRandomly2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestTeleport",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_teleport",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cet/item/TestTeleportItem.java",
+          "src/main/resources/assets/c_e_t/models/item/test_teleport.json"
+        ]
+      }
+    },
+    {
+      "name": "AttackPlayerIf",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_player_if",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cet/procedures/AttackPlayerIfProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ContinueAttackingPlayerIf",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "continue_attacking_player_if",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cet/procedures/ContinueAttackingPlayerIfProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "endermanCanAttack",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "entity.c_e_t.custom_teleporting": "Custom Teleporting",
+      "entity.c_e_t.custom_enderman": "Custom Enderman",
+      "item.c_e_t.custom_teleporting_spawn_egg": "Custom Teleporting Spawn Egg",
+      "item.c_e_t.custom_enderman_spawn_egg": "Custom Enderman Spawn Egg",
+      "item.c_e_t.test_teleport": "Test Teleport"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "c_e_t",
+    "modName": "Custom Enderman Teleportation",
+    "version": "1.0.0",
+    "author": "jonathan, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.cet",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

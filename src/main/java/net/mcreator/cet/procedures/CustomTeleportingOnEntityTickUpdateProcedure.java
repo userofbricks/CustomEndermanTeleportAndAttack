@@ -16,8 +16,10 @@ public class CustomTeleportingOnEntityTickUpdateProcedure {
 		double ydist = 0;
 		double zdist = 0;
 		double totdist = 0;
-		if (world.dayTime() % 100 == Mth.nextInt(RandomSource.create(), 1, 3) || !world.getEntitiesOfClass(Arrow.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).isEmpty()) {
-			TeleportRandomly2Procedure.execute(world, x, y, z, entity);
+		if (entity.isOnGround()) {
+			if (world.dayTime() % 100 == Mth.nextInt(RandomSource.create(), 1, 3) || !world.getEntitiesOfClass(Arrow.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).isEmpty()) {
+				TeleportRandomly2Procedure.execute(world, x, y, z, entity);
+			}
 		}
 	}
 }
